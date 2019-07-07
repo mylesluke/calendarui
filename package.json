@@ -1,0 +1,19 @@
+{
+  "name": "calendarui",
+  "version": "1.0.0",
+  "description": "calendarui with html and css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylesluke/calendarui.git"
+  },
+  "author": "Myles Luke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mylesluke/calendarui/issues"
+  },
+  "homepage": "https://github.com/mylesluke/calendarui#readme"
+}
