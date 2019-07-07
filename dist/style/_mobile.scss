@@ -1,0 +1,66 @@
+@media screen and (min-width: 769px) {
+    .calendar {
+        width: 800px;
+        height: 450px;
+
+        .date {
+            width: 400px;
+
+            .day,
+            .number {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .image {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        width: 700px;
+        height: 400px;
+
+        .date {
+            width: 350px;
+
+            .day,
+            .number {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .image {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .calendar {
+        width: 300px;
+        height: 600px;
+        align-items: flex-start;
+
+        .date {
+            width: 350px;
+
+            .day,
+            .number {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        .image {
+            height: 300px;
+            width: 300px;
+            top: 300px;
+
+        }
+    }
+}

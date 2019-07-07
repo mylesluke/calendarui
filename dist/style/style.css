@@ -14,13 +14,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background: #6a0a0b;
+  background: #810d0d;
 }
 
 .calendar {
   position: relative;
   background: #fff;
-  width: 800px;
+  max-width: 800px;
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +92,7 @@ body {
   top: 0;
   right: 0;
   width: 400px;
-  heighT: 100%;
+  height: 100%;
   background: #000;
 }
 
@@ -104,5 +104,64 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .calendar {
+    width: 800px;
+    height: 450px;
+  }
+  .calendar .date {
+    width: 400px;
+  }
+  .calendar .date .day,
+  .calendar .date .number {
+    width: 48px;
+    height: 48px;
+  }
+  .calendar .image {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .calendar {
+    width: 700px;
+    height: 400px;
+  }
+  .calendar .date {
+    width: 350px;
+  }
+  .calendar .date .day,
+  .calendar .date .number {
+    width: 40px;
+    height: 40px;
+  }
+  .calendar .image {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calendar {
+    width: 300px;
+    height: 600px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .calendar .date {
+    width: 350px;
+  }
+  .calendar .date .day,
+  .calendar .date .number {
+    width: 34px;
+    height: 34px;
+  }
+  .calendar .image {
+    height: 300px;
+    width: 300px;
+    top: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
