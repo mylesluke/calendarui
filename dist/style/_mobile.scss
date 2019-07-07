@@ -6,7 +6,7 @@
         .date {
             width: 400px;
 
-            .day,
+            .days,
             .number {
                 width: 48px;
                 height: 48px;
@@ -27,7 +27,7 @@
         .date {
             width: 350px;
 
-            .day,
+            .days,
             .number {
                 width: 40px;
                 height: 40px;
@@ -41,15 +41,20 @@
 }
 
 @media screen and (max-width: 500px) {
+    .container {
+        overflow: hidden;
+    }
+
     .calendar {
         width: 300px;
-        height: 600px;
+        height: 640px;
         align-items: flex-start;
 
-        .date {
-            width: 350px;
 
-            .day,
+        .date {
+            width: 400px;
+
+            .days,
             .number {
                 width: 34px;
                 height: 34px;
@@ -59,7 +64,7 @@
         .image {
             height: 300px;
             width: 300px;
-            top: 300px;
+            top: 340px;
 
         }
     }
