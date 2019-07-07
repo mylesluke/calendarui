@@ -14,7 +14,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background: #352b48;
+  background: #6a0a0b;
 }
 
 .calendar {
@@ -32,8 +32,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 15px solid #fff;
-  -webkit-box-shadow: 0 15px 35px rbga(0, 0, 0, 0.5);
-          box-shadow: 0 15px 35px rbga(0, 0, 0, 0.5);
+  -webkit-box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.7);
+          box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.7);
 }
 
 .calendar .date {
@@ -59,7 +59,8 @@ body {
       flex-wrap: wrap;
 }
 
-.calendar .date .day, .calendar .date .number {
+.calendar .date .day,
+.calendar .date .number {
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -73,7 +74,8 @@ body {
           align-items: center;
 }
 
-.calendar .date .day:first-child, .calendar .date .number:nth-child(7n+1) {
+.calendar .date .day:first-child,
+.calendar .date .number:nth-child(7n+1) {
   color: #01a3a4;
   font-weight: 600;
 }

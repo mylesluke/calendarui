@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #352b48;
+    background: darken(#ee5253, 40);   // #352b48;
 }
 
 .calendar {
@@ -20,11 +20,13 @@ body {
     justify-content: space-between;
     align-items: center;
     border: 15px solid #fff;
-    box-shadow: 0 15px 35px rbga(0,0,0,0.5);
+    box-shadow: 15px 15px 35px rgba(0,0,0,.7);
+
     .date {
         width: 400px;
         padding: 30px;
         box-sizing: border-box;
+
         h3 {
             margin: 0 0 20px;
             padding: 0;
@@ -32,28 +34,34 @@ body {
             font-weight: 500;
             text-align: center;
         }
+
         .days {
             display: flex;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
         }
-        .day, .number {
+
+        .day,
+        .number {
             width: 48px;
             height: 48px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .day:first-child, .number:nth-child(7n+1) {
-            color: #01a3a4; 
+
+        .day:first-child,
+        .number:nth-child(7n+1) {
+            color: #01a3a4;
             font-weight: 600;
         }
+
         .number.active {
             background: #01a3a4;
             color: #fff;
             border-radius: 50%;
             cursor: pointer;
         }
-        
+
     }
 
     .image {
@@ -63,6 +71,7 @@ body {
         width: 400px;
         heighT: 100%;
         background: #000;
+
         img {
             position: absolute;
             top: 0;
