@@ -12,6 +12,7 @@ body {
     justify-content: center;
     flex-direction: column;
     background: darken(#ee5253, 35); // #352b48;
+    height: 100vh;
 
     h1 {
         margin: 3%;
@@ -92,7 +93,7 @@ body {
             padding: 10px 0;
             //background: #01a3a4;
             justify-content: space-evenly;
-        
+
             div {
                 text-align: center;
             }
@@ -109,7 +110,7 @@ body {
             flex-wrap: wrap;
             text-align: center;
             padding: 10px 0;
-            
+
 
             div {
                 width: 14.28%;
@@ -120,9 +121,10 @@ body {
                     border-radius: 50%;
                     transition: 0.3s ease;
                     background: #01a3a4;
-                    
+
                 }
             }
+
             div:nth-child(7n+1) {
                 color: #01a3a4;
                 font-weight: 600;
