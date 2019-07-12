@@ -121,13 +121,16 @@ body {
                     border-radius: 50%;
                     transition: 0.3s ease;
                     background: #01a3a4;
-
+                    color: #fff;
                 }
             }
 
             div:nth-child(7n+1) {
                 color: #01a3a4;
                 font-weight: 600;
+                &:hover {
+                    color: #fff;
+                }
             }
 
             .today {
@@ -170,5 +173,7 @@ body {
         pointer-events: none;
     }
 }
+
+@import 'odometer';
 
 //@import 'mobile';

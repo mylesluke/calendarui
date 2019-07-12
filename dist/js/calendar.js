@@ -12,8 +12,6 @@ function renderDate() {
     let prevDate = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
     let today = new Date();
 
-    
-
     // Check Initial Month to Load Photo
     checkDate();
     // Print month
