@@ -13,10 +13,6 @@ body {
     flex-direction: column;
     background: darken(#ee5253, 35); // #352b48;
     height: 100vh;
-
-    h1 {
-        margin: 3%;
-    }
 }
 
 .calendar {
@@ -30,6 +26,7 @@ body {
     border: 15px solid #fff;
     box-shadow: 15px 15px 35px rgba(0, 0, 0, .7);
     color: #000;
+    overflow: hidden;
 
     .date {
         width: 400px;
@@ -122,12 +119,14 @@ body {
                     transition: 0.3s ease;
                     background: #01a3a4;
                     color: #fff;
+                    cursor: pointer;
                 }
             }
 
             div:nth-child(7n+1) {
                 color: #01a3a4;
                 font-weight: 600;
+
                 &:hover {
                     color: #fff;
                 }
@@ -142,6 +141,17 @@ body {
 
             .prev_date {
                 color: #555;
+
+                &:hover {
+                    background: #fff;
+                    color: #555;
+
+                    &:nth-child(7n+1) {
+                        color: #01a3a4;
+                        cursor: default;
+                    }
+                }
+
             }
 
         }
@@ -154,6 +164,7 @@ body {
         }
     }
 
+    // image container
     .image {
         position: absolute;
         top: 0;
@@ -163,6 +174,7 @@ body {
         // background: #000;
     }
 
+    // photo inside container
     #photo {
         position: absolute;
         top: 0;
@@ -174,6 +186,4 @@ body {
     }
 }
 
-@import 'odometer';
-
-//@import 'mobile';
+@import 'mobile';

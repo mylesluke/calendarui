@@ -1,71 +1,40 @@
-@media screen and (min-width: 769px) {
-    .calendar {
-        width: 800px;
-        height: 450px;
 
-        .date {
-            width: 400px;
-
-            .days,
-            .number {
-                width: 48px;
-                height: 48px;
-            }
-        }
-
-        .image {
-            width: 400px;
-        }
-    }
-}
-
+// iPad
 @media screen and (max-width: 768px) {
     .calendar {
-        width: 700px;
-        height: 400px;
-
-        .date {
-            width: 350px;
-
-            .days,
-            .number {
-                width: 40px;
-                height: 40px;
-            }
-        }
+        width: calc(100% / 2);
+        height: 900px;
+        flex-direction: column;
 
         .image {
+            position: static;
+            height: 50%;
             width: 350px;
+        }
+
+        #photo {
+            top: calc(100% / 2);
+            height: 50%;
         }
     }
 }
-
+// Mobile Phones
 @media screen and (max-width: 500px) {
-    .container {
-        overflow: hidden;
-    }
-
     .calendar {
-        width: 300px;
-        height: 640px;
-        align-items: flex-start;
-
+        width: 350px;
+        height: 900px;
 
         .date {
-            width: 400px;
-
-            .days,
-            .number {
-                width: 34px;
-                height: 34px;
-            }
+            width: 350px;
         }
-
-        .image {
-            height: 300px;
-            width: 300px;
-            top: 340px;
-
+        .image { 
+            
+            height: 100%;
+        }
+        #photo {
+            top: auto;
+            height: 40%;
+            padding: 10px;
         }
     }
 }
